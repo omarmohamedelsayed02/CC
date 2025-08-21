@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLEAN CLEAR - منصة شركات النظافة في مصر</title>
+    <meta name="description" content="ابحث وفلتر عن أفضل شركات النظافة في جميع محافظات مصر مع تقييمات ومعلومات تواصل." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header" data-aos="fade-down">
+        <div class="container header-inner">
+            <a class="brand" href="#home"><span class="brand-clean">CLEAN</span> <span class="brand-clear">CLEAR</span></a>
+            <nav class="nav">
+                <a href="#top" class="nav-link">الأعلى تقييماً</a>
+                <a href="#companies" class="nav-link">كل الشركات</a>
+                <a href="#about" class="nav-link">من نحن</a>
+                <a href="#testimonials" class="nav-link">آراء العملاء</a>
+            </nav>
+     
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <h1 class="typing-effect" data-aos="fade-up" data-aos-delay="500"></h1>
+                <p class="hero-desc" data-aos="fade-up" data-aos-delay="700">
+                    منصة رائدة لتسهيل العثور على أفضل شركات النظافة في مصر.
+                </p>
+            </div>
+        </section>
+
+        <section id="top" class="companies-section top-rated-section">
+            <div class="container">
+                <h2 data-aos="fade-up">الأعلى تقييماً</h2>
+                <div id="top-rated-list" class="grid-container" data-aos="fade-up" data-aos-delay="200"></div>
+            </div>
+        </section>
+
+        <section id="companies" class="companies-section all-companies-section">
+            <div class="container">
+                <h2 data-aos="fade-up">كل الشركات</h2>
+                <div class="filters" data-aos="fade-up" data-aos-delay="200">
+                    <input type="text" id="searchBar" placeholder="بحث باسم الشركة أو المحافظة..." class="search-bar">
+                    <select id="governorateFilter" class="filter-select"></select>
+                    <select id="ratingFilter" class="filter-select">
+                        <option value="0">كل التقييمات</option>
+                        <option value="4.5">4.5+ ⭐</option>
+                        <option value="4.0">4.0+ ⭐</option>
+                        <option value="3.5">3.5+ ⭐</option>
+                        <option value="3.0">3.0+ ⭐</option>
+                    </select>
+                </div>
+                <div id="all-companies-list" class="grid-container" data-aos="fade-up" data-aos-delay="400"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container about-inner" data-aos="fade-up">
+                <div class="about-text">
+                    <h2>من نحن</h2>
+                    <p>
+                        تأسست منصة CLEAN CLEAR بمهمة بسيطة: جعل العثور على خدمات تنظيف موثوقة وحجزها أمرًا سهلاً.
+                        نحن نتفهم التحديات التي تواجهها في العثور على عمال نظافة محترفين وجديرين بالثقة، ولهذا قمنا ببناء هذه المنصة لحل هذه المشكلة.
+                    </p>
+                    <p>
+                        قضى فريقنا أشهرًا في تنسيق قائمة الشركات بعناية، مع ضمان أن كل شركة تلبي معاييرنا العالية من الجودة والاحترافية ورضا العملاء.
+                        اليوم، نفخر بتقديم منصة يمكنك من خلالها اختيار أفضل شركة بثقة لتلبية احتياجاتك.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container" data-aos="fade-up">
+                <h2>ماذا يقول عملاؤنا</h2>
+                <div id="testimonials-list" class="testimonials-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/201000000000" class="whatsapp" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+    <button id="backToTop" class="to-top" aria-label="رجوع لأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="brand" href="#home">CLEAN CLEAR</a>
+            <div class="links">
+                <a href="#home">الرئيسية</a>
+                <a href="#companies">الشركات</a>
+                <a href="#about">من نحن</a>
+            </div>
+            <div class="socials">
+                <a href="https://facebook.com/cleanclear" target="_blank" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/cleanclear" target="_blank" aria-label="انستجرام"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <p class="copyright">© 2025 CLEAN CLEAR. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

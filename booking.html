@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>حجز الخدمة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>حجز الخدمة</h1></header>
+<main>
+  <form id="bookingForm">
+    <label>الميعاد:<input type="datetime-local" id="date"></label>
+    <label>العنوان:<input type="text" id="address"></label>
+    <label>اختر الباقة:
+      <select id="package">
+        <option value="100">باقة أساسية - 100ج</option>
+        <option value="200">باقة متقدمة - 200ج</option>
+        <option value="300">باقة بريميوم - 300ج</option>
+      </select>
+    </label>
+    <p>السعر الكلي: <span id="price">100</span> ج</p>
+    <button type="submit">تأكيد الحجز</button>
+  </form>
+</main>
+<script>
+const pkg = document.getElementById('package');
+const priceEl = document.getElementById('price');
+pkg.onchange = ()=> priceEl.textContent = pkg.value;
+document.getElementById('bookingForm').onsubmit = e => {
+  e.preventDefault();
+  window.location.href = "success.html";
+};
+</script>
+</body>
+</html>
